@@ -1,9 +1,8 @@
-import { LabelHTMLAttributes } from "react";
+// label.tsx
+import React from 'react';
 
-export function Label(props: LabelHTMLAttributes<HTMLLabelElement>) {
-  return (
-    <label {...props} className="block text-sm font-medium text-gray-700">
-      {props.children}
-    </label>
-  );
-}
+const Label: React.FC<React.LabelHTMLAttributes<HTMLLabelElement>> = (props) => {
+  return <label {...props} />;
+};
+
+export default Label;
