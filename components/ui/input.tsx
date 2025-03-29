@@ -1,10 +1,8 @@
-import { InputHTMLAttributes } from "react";
+// input.tsx
+import React from 'react';
 
-export function Input(props: InputHTMLAttributes<HTMLInputElement>) {
-  return (
-    <input
-      {...props}
-      className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-600"
-    />
-  );
-}
+const Input: React.FC<React.InputHTMLAttributes<HTMLInputElement>> = (props) => {
+  return <input {...props} />;
+};
+
+export default Input;
