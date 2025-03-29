@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 // Ensure the paths to your components are correct
-import Card, { CardContent } from "../components/ui/card";
+import { Card, CardContent } from "../components/ui/card";
 import Input from "../components/ui/input";
 import Label from "../components/ui/label";
 import Textarea from "../components/ui/textarea";
@@ -67,42 +67,4 @@ export default function HiringCardForm() {
             </div>
           </div>
 
-          {/* Hours and rate */}
-          <div className="grid grid-cols-2 gap-4">
-            <div>
-              <Label>Total Hours</Label>
-              <Input
-                type="number"
-                value={hours}
-                onChange={(e) => setHours(parseFloat(e.target.value))}
-              />
-            </div>
-            <div>
-              <Label>Rate per 8 Hours</Label>
-              <Input
-                type="number"
-                value={rate}
-                onChange={(e) => setRate(parseFloat(e.target.value))}
-              />
-            </div>
-          </div>
-
-          {/* Calculated amount */}
-          <div>
-            <Label>Calculated Amount</Label>
-            <Input value={`BHD ${total}`} readOnly />
-          </div>
-
-          {/* Notes */}
-          <div>
-            <Label>Notes</Label>
-            <Textarea placeholder="Any special instructions or notes..." />
-          </div>
-
-          {/* Submit button */}
-          <Button className="mt-4">Submit Hiring Card</Button>
-        </CardContent>
-      </Card>
-    </div>
-  );
-}
+          {/* Hours and*
