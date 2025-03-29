@@ -7,3 +7,7 @@ export const Card = ({ children }: { children: ReactNode }) => {
     </div>
   );
 };
+
+export const CardContent = ({ children }: { children: ReactNode }) => {
+  return <div className="p-4">{children}</div>;
+};
